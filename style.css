@@ -604,3 +604,91 @@ main {
     font-weight: 900;
     line-height: 50px;
 }
+
+.drink-recommendations {
+    width: 100%;
+    margin-top: 97px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+
+.recommendation {
+    width: 560px;
+    height: 263px;
+    padding-right: 23px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#recommendation-1 {
+    background: url(images/drink_recommendations/recommendation_1.png);
+    background-size: cover;
+}
+
+#recommendation-2 {
+    background: url(images/drink_recommendations/recommendation_2.png);
+    background-size: cover;
+}
+
+.recommendation-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#recommendation-wrapper-2 {
+    gap: 0px;
+}
+
+.recommendation-wrapper .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+    align-items: flex-start;
+}
+
+.recommendation-wrapper .content h2 {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px;
+    text-transform: capitalize;
+}
+
+.recommendation-wrapper .content p {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: capitalize;
+}
+
+.recommendation-button {
+    width: 141px;
+    height: 50px;
+    padding: 0px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7FAD39;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.recommendation-button:hover {
+    background: #5a7b28;
+    cursor: pointer;
+}
