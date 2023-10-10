@@ -1,0 +1,305 @@
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url(fonts/CerebriSansPro-Heavy.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url(fonts/CerebriSansPro-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url(fonts/CerebriSansPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url(fonts/CerebriSansPro-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url(fonts/CerebriSansPro-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url(fonts/CerebriSansPro-Regular.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cerebri Sans Pro";
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-upper {
+    width: 100%;
+    min-height: 47px;
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    gap: 399px;
+    align-items: center;
+}
+
+#light-logo {
+    display: none;
+}
+
+.header-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-info p {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.email-info {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    margin-right: 17px;
+}
+
+.email-info img {
+    width: 24px;
+    height: 24px;
+}
+
+.email-info a {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.email-info a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-info > p {
+    margin-left: 20px;
+}
+
+.header-other {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.socials > img {
+    width: 18px;
+    height: 18px;
+}
+
+.language {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.language-flag {
+    width: 27px;
+    height: 14px;
+}
+
+.language > p {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 9px;
+}
+
+.language-more {
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.login > img {
+    width: 24px;
+    height: 24px;
+}
+
+.login > p {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header-main {
+    width: 1140px;
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-main > img {
+    width: 182px;
+    height: 34px;
+    
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.header-main nav {
+    margin-left: 111px;
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+    align-items: center;
+}
+
+.header-main nav a {
+    margin-top: 3px;
+    color: #2A2A2A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header-main nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-main nav #link-1 {
+    color: #7FAD39;
+    font-weight: 800;
+}
+
+.shopping {
+    margin-left: 236px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.shopping-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+}
+
+.favorites {
+    background-image: url(images/header/favorite_icon.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.shopping-cart {
+    background-image: url(images/header/cart_icon.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.amount {
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #7FAD39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount p {
+    width: 8px;
+    height: 9px;
+    color: #FFF;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price p {
+    color: #999;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.price .price-amount {
+    color: #2A2A2A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
