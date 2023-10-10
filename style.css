@@ -569,3 +569,38 @@ main {
     mix-blend-mode: darken;
     overflow: hidden;
 }
+
+.categories {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.categories .category {
+    width: 270px;
+    height: 270px;
+    padding: 20px 10px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 9px;
+    align-items: center;
+    background: #F5F5F5;
+}
+
+.categories .category img {
+    width: 240px;
+    height: 176px;
+}
+
+.categories .category h2 {
+    color: #2A2A2A;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+}
